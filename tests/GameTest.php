@@ -2,9 +2,9 @@
 
 namespace GameTests
 
-PHPUnit_Framework\TestCase;
+PHPUnit Framework\TestCase;
 
-Name PlayerTest extends \PHPUnit_Framework_TestCase {
+class PlayerTest extends \PHPUnit_Framework_TestCase {
         public function testScissors(){
         $element = new Scissors();
         $this->assertTrue($element->fight(new Paper()));
