@@ -1,5 +1,5 @@
 <?php
-class Paper extends Element implements Cut
+class Paper extends Element implements Crush
 {
     public function cover(Element $element)
     {
