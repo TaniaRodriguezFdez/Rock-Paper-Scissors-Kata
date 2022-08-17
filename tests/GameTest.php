@@ -1,11 +1,11 @@
 <?php
 
-namespace Tests;
+namespace GameTests
 
-use PHPUnit\Framework\TestCase;
-use App\Player;
-class GameTest extends TestCase {
-    public function testScissors(){
+PHPUnit_Framework\TestCase;
+
+Name PlayerTest extends \PHPUnit_Framework_TestCase {
+        public function testScissors(){
         $element = new Scissors();
         $this->assertTrue($element->fight(new Paper()));
     }
@@ -36,6 +36,5 @@ class GameTest extends TestCase {
         $element = new scissors();
         $this->assertNull($element->fight(new scissors()));
     }
-
 
 }
