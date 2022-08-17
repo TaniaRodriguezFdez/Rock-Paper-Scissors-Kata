@@ -2,10 +2,15 @@
 
 namespace Tests;
 
+
 use  PHPUnit\Framework\TestCase;
 
 
-class Player extends TestCase {
+use  PHPUnit\Framework\Test;
+
+
+
+class Player extends Test {
 
 	public function test_Player(
 	) {
@@ -15,5 +20,3 @@ class Player extends TestCase {
 
 
 }
-
-
