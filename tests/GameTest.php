@@ -1,12 +1,18 @@
 <?php
 
 
+<<<<<<< HEAD
 namespace GameTests;
 
 use PHPUnit_Framework\TestCase;
 
 
 class PlayerTest extends TestCase {
+=======
+PHPUnit Framework\TestCase;
+
+class PlayerTest extends \PHPUnit_Framework_TestCase {
+>>>>>>> aa4263d5ef7ff2161f8d452489e42cfcdf5837eb
         public function testScissors(){
         $element = new Scissors();
         $this->assertTrue($element->fight(new Paper()));
