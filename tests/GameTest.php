@@ -1,40 +1,21 @@
 <?php
+namespace Tests;
 
-namespace GameTests
+use App\Models\Player;
+use PHPUnit\Framework\TestCase;
 
-PHPUnit Framework\TestCase;
+class Game extends TestCase {
 
-class PlayerTest extends \PHPUnit_Framework_TestCase {
-        public function testScissors(){
-        $element = new Scissors();
-        $this->assertTrue($element->fight(new Paper()));
-    }
-    public function testpaperCubrerock()
+    public function test_player1_rock_player2_scissors_1_win()
     {
-        $element = new Paper();
-        $this->assertTrue($element->fight(new Rock()));
-    }
-    public function testrockAplastascissors()
-    {
-        $element = new Rock();
-        $this->assertTrue($element->fight(new Scissors()));
-    }
-    public function testEmpaterock()
-    {
-        $element = new rock();
-        $this->assertNull($element->fight(new Rock()));
-    }
+        $player1 = new Player;
+        $player2 = new Player;
+        $player1-> chose("Rock");
+        $player2->chose("Scissors");
 
-    public function testEmpatepaper()
-    {
-        $element = new paper();
-        $this->assertNull($element->fight(new paper()));
-    }
+        $winnner = $game->start($player1,$player2);
 
-    public function testEmpatescissors()
-    {
-        $element = new scissors();
-        $this->assertNull($element->fight(new scissors()));
+        $this->$this->assertEquals("Player 1 win", $winnner);
     }
 
 }
