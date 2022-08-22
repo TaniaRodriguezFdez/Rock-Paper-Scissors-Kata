@@ -2,7 +2,8 @@
 
 namespace App\Models;
 
-class Player{
+class Player {
+
     private $figure;
 
     public function getFigure()
@@ -10,15 +11,15 @@ class Player{
         return $this->figure;
     }
 
-    public function chose (string $figure)
+    public function chose(string $figure)
     {
-        if($figure == "Rock"){
+        if ($figure == "Rock") {
             $this->figure = new Rock;
         }
 
         if ($figure == "Scissors") {
-                $this->figure;
-
+            $this->figure = new Scissors;
         }
+
     }
 }

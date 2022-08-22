@@ -1,13 +1,12 @@
 <?php
 
-namespace app;
+namespace App;
 
-class Game{
-
-    public function star($player1, $player2): string
+class Game {
+    
+    public function start($player1, $player2) : string
     {
         if ($player1->getFigure()->getType() == "Rock" && $player2->getFigure()->getType() == "Scissors") {
-            
             return "Player 1 wins";
         }
     }

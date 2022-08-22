@@ -2,11 +2,9 @@
 
 namespace App\Models;
 
-
-
 abstract class Figure {
-    protected $type;
 
+    protected $type;
 
     public function getType()
     {
