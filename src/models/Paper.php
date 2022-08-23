@@ -1,13 +1,13 @@
 <?php
-class Paper extends Element implements Cut
-{
-    public function cover(Element $element)
-    {
-        return $element instanceof Cover;
+
+namespace App\Models;
+
+use App\Models\Figure;
+
+class Paper extends Figure {
+
+    public function __construct() {
+        $this->type = "Paper";
     }
 
-    public function rebut(Element $element)
-    {
-        return $element instanceof Rebutable;
-    }
 }
