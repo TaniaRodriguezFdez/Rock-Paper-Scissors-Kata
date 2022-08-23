@@ -30,7 +30,6 @@ class Game {
         if ($player1->getFigure()->getType() == "Paper" && $player2->getFigure()->getType() == "Paper") {
             return "Draw";
         }
-
     }
 
 }

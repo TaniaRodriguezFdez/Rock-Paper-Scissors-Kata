@@ -31,11 +31,11 @@ class PlayerTest extends TestCase
     }
     public function test_player_chose_paper()
     {
-      $player = new Player;
-      $paper = new Paper;
-      $player->chose("Paper");
+    $player = new Player;
+    $paper = new Paper;
+    $player->chose("Paper");
 
-      $this->assertEquals($paper,$player->getFigure());
+    $this->assertEquals($paper,$player->getFigure());
         
     }
 
